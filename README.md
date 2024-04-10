@@ -11,4 +11,7 @@ Projeto Front-End para o teste da Serasa/AllowMe, o qual foi proposto para a vag
 To install my project, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/bmosantana/frontendblogallowm.git`
-2. Install the dependencies: `npm install`
+2. Vá até o diretório: `cd allowmefront`
+3. Install the dependencies: `npm install`
+4. Start project: `npm start`
+
