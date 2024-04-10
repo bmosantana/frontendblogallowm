@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import PostList from './components/PostList';
 import './App.css';
 
-function App() {
+const posts = [
+  {
+    id: 1,
+    title: 'My first blog post',
+    content: 'This is the content of my first blog post.',
+    author: 'John Doe',
+    date: new Date(),
+  },
+  {
+    id: 2,
+    title: 'My second blog post',
+    content: 'This is the content of my second blog post.',
+    author: 'Jane Doe',
+    date: new Date(),
+  },
+];
+
+const App: React.FC = () => {
+  const [postsState, setPostsState] = useState(posts);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PostList posts={postsState} />
     </div>
   );
-}
+};
 
 export default App;
