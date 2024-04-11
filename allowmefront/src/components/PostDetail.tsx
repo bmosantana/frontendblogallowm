@@ -9,7 +9,7 @@ const PostDetail: React.FC<PostProps> = ({ post }) => {
   return (
     <div className='noticia-detail'>
       <h2>{post.titulo}</h2>
-      <p>Author: {post.autor}</p>
+      <p>Autor: {post.autor}</p>
       <p>Date: {post.dt_criacao.toLocaleDateString()}</p>
       <p>{post.texto}</p>
     </div>
