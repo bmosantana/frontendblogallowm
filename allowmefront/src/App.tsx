@@ -51,7 +51,7 @@ const App: React.FC = () => {
           <PostList posts={postsState} />
         </div>
         <div className='ultimas-noticias'>
-          <h1>Últimas Noticias</h1>
+          <h2>Últimas Noticias</h2>
           <UltimaNoticiaList posts={postsState.slice(0,3)} />
         </div>
       </div>

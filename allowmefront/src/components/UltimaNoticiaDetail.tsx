@@ -14,7 +14,9 @@ const UltimaNoticiaDetail: React.FC<UltimaNoticiaDetailProps> = ({ post }) => {
             <h3>{post.titulo}</h3>
             <p>Author: {post.autor}</p>
             <p>Date: {post.dt_criacao.toLocaleDateString()}</p>
+            <hr></hr>
         </div>
+        
     );
 };
 

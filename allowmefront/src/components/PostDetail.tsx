@@ -7,7 +7,7 @@ interface PostProps {
 
 const PostDetail: React.FC<PostProps> = ({ post }) => {
   return (
-    <div className='post-detail'>
+    <div className='noticia-detail'>
       <h2>{post.titulo}</h2>
       <p>Author: {post.autor}</p>
       <p>Date: {post.dt_criacao.toLocaleDateString()}</p>
